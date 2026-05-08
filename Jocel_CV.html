@@ -1,0 +1,315 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Activity 12</title>
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    padding: 20px;
+    color: #333;
+}
+
+.resume-container {
+    max-width: 900px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+.header {
+    background-color: #555;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.profile-img-container {
+    background-color: #d3d3d3;
+    padding: 40px;
+    width: 35%;
+    align-self:center ;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    object-fit: cover;
+}
+
+.name-title {
+    padding-left: 40px;
+}
+
+.name-title h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+
+
+.main-layout {
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+
+
+.sidebar {
+    background-color: #d3d3d3;
+    padding: 30px;
+    font-size: 0.85rem;
+}
+
+.sidebar h3, .content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #222;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #999;
+    margin-bottom: 15px;
+}
+
+.sidebar section {
+    margin-bottom: 25px;
+}
+
+.sidebar ul {
+    padding-left: 15px;
+}
+
+.sidebar li {
+    margin-bottom: 8px;
+}
+
+
+.content {
+    padding: 40px;
+    font-size: 0.9rem;
+}
+
+.content section {
+    margin-bottom: 30px;
+}
+
+.timeline {
+    border-left: 2px solid #555;
+    padding-left: 20px;
+    margin-left: 10px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -29px;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border: 2px solid #555;
+    border-radius: 50%;
+}
+
+
+.ref-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+.certification {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 0.8rem;
+}
+
+.certification p {
+    max-width: 50%;
+}
+
+.signature {
+    text-align: center;
+}
+
+
+.contact i {
+    width: 20px;
+    margin-right: 10px;
+}
+   </style>
+</head>
+<body>
+    <p><a href="about.html">← Back to About</a></p>
+
+    <div class="resume-container">
+        
+        <header class="header">
+            <div class="profile-img-container">
+                <img src="c:\Users\irene\OneDrive\文档\FINALSPJ\IT5_WST_B3_Group3\IT5_WST_B3_Group3\IT5_WST_B3_Group3\Website Final - Copy - Final_Recipe_Jocel\images\Jocel.jfif" class="profile-pic" height="90" width="90" alt="Profile>
+            </div>
+            <div class="name-title">
+                <h1>JOCEL ANN F. <br> FELIZARIO</h1>
+            </div>
+        </header>
+
+        <div class="main-layout">
+           
+            <aside class="sidebar">
+                <section>
+                    <h3>PERSONAL INFORMATION</h3>
+                    <hr>
+                    <p><strong>Age:</strong> 23 years old</p>
+                    <p><strong>Date of birth:</strong> October 14, 2003</p>
+                    <p><strong>Place of birth:</strong> Gabawan, Odiongan, Romblon</p>
+                    <p><strong>Gender:</strong> Female</p>
+                    <p><strong>Civil Status:</strong> Single</p>
+                    <p><strong>Religion:</strong> Roman Catholic</p>
+                    <p><strong>Nationality:</strong> Filipino</p>
+                    <p><strong>Father:</strong> Johnny Felizario</p>
+                    <p><em>Occupation:</em> Construction Worker</p>
+                    <p><strong>Mother:</strong> Jocelyn Felizario</p>
+                    <p><em>Occupation:</em> None</p>
+                </section>
+
+                <section>
+                    <h3>SKILLS</h3>
+                    <hr>
+                    <ul>
+                        <li>Strong problem-solving and critical thinking skills</li>
+                        <li>Good communication skills</li>
+                        <li>Teamwork and collaboration</li>
+                        <li>Time management and organization</li>
+                        <li>Attention to detail</li>
+                        <li>Fast learner and adaptable to new technologies</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>EXPERIENCES</h3>
+                    <hr>
+                    <ul>
+                        <li>Install and configure computer system</li>
+                        <li>Set-up Computer Networks</li>
+                        <li>Maintain and Repair Computer Systems and Networks</li>
+                    </ul>
+                </section>
+
+                <section class="contact">
+                    <h3>CONTACT</h3>
+                    <hr>
+                    <p><i class="fas fa-phone"></i> 09652301051</p>
+                    <p><i class="fas fa-envelope"></i> jocelannfelizario@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Gabawan, Odiongan, Romblon</p>
+                    <p><i class="fab fa-facebook"></i> facebook.com/JocelAnn</p>
+                </section>
+            </aside>
+
+            
+            <main class="content">
+                <section>
+                    <h3>ABOUT ME</h3>
+                    <hr>
+                    <p>I am an aspiring IT professional with a strong interest in technology, problem-solving, and system development. I have basic knowledge in programming, networking, and database management, and I am eager to continuously learn and improve my technical skills. I am detail-oriented, adaptable, and capable of working both independently and in a team.</p>
+                </section>
+
+                <section class="education">
+                    <h3>EDUCATIONAL ATTAINMENT</h3>
+                    <hr>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h4>TERTIARY EDUCATION</h4>
+                            <p><strong>SCHOOL:</strong> Romblon State University-Main Campus</p>
+                            <p><strong>DEGREE:</strong> Bachelor of Science in Information Technology</p>
+                            <p><strong>ADDRESS:</strong> Liwanag, Odiongan, Romblon</p>
+                            <p><strong>SCHOOL YEAR:</strong> 2023-2028</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>SECONDARY EDUCATION</h4>
+                            <p><strong>SCHOOL:</strong> Odiongan National Highschool</p>
+                            <p><strong>STRAND:</strong> TVL-ICT</p>
+                            <p><strong>ADDRESS:</strong> Dapawan, Odiongan, Romblon</p>
+                            <p><strong>SCHOOL YEAR:</strong> 2018-2023</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>ELEMENTARY EDUCATION</h4>
+                            <p><strong>SCHOOL:</strong> Gabawan Elementary School</p>
+                            <p><strong>ADDRESS:</strong> Gabawan, Odiongan, Romblon</p>
+                            <p><strong>SCHOOL YEAR:</strong> 2011-2018</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>ACHIEVEMENT</h3>
+                    <hr>
+                    <ul>
+                        <li>Computer Systems Servicing NC II - TESDA Certified</li>
+                        <li>Cisco Networking Academy: JavaScript Programming Certification</li>
+                        <li>Senior High School, TVL-ICT Strand - With High Honor</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>TRAININGS AND SEMINARS</h3>
+                    <hr>
+                    <ul>
+                        <li>Computer Systems Servicing (CSS) NC II Training - Hardware Installation and Maintenance</li>
+                        <li>Cisco Networking Academy Training - JavaScript Essentials / Networking Basics</li>
+                        <li>Seminar on Sustainable Development Goals (SDGs) - Promoting Global Sustainability and Awareness</li>
+                        <li>Basic Networking Training - Installation and Configuration</li>
+                    </ul>
+                </section>
+
+                <section class="references">
+                    <h3>CHARACTER REFERENCES</h3>
+                    <hr>
+                    <div class="ref-grid">
+                        <div>
+                            <p><strong>Dr. CATHERENE BHEL B. AGUILA</strong></p>
+                            <p>042 - 111 - 0064</p>
+                            <p>Dean, IIT</p>
+                            <p>Romblon State University</p>
+                        </div>
+                        <div>
+                            <p><strong>Prof. ROBERT JEFFREY F. FERMANEJO</strong></p>
+                            <p>09104370430</p>
+                            <p>Instructor I, IIT</p>
+                            <p>Romblon State University</p>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="certification">
+                    <p>I here by certify that above information is true and correct to the best of my knowledge and belief</p>
+
+                     
+                        <p><b>JOCEL ANN F. FELIZARIO</b><br>____________________________<br>Applicant</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    
+</body>
+</html>

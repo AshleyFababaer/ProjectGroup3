@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" href="c:\Users\irene\OneDrive\文档\FINALSPJ\IT5_WST_B3_Group3\IT5_WST_B3_Group3\IT5_WST_B3_Group3\Website Final - Copy - Final_Recipe_Jocel\images\Header.jpg">
+    <script src="js/script.js" defer></script>
+    <title>AJ & The Four Flavors Recipes</title>
+    <link rel="stylesheet" href="css/style.css">
+     <link rel="icon" href="c:\Users\Kaito_Artx\Desktop\Misc\Website Final - Copy - Final_Recipe_Jocel\images\Header.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="hdr">
+        <a class="logo" href="home.html"><i class="fas fa-utensils"></i><span>AJ & The Four Flavors</span></a>
+        <button id="menu-toggle" class="menuTgl" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+        <div class="hdrRt">
+            <nav class="nav" id="site-nav">
+                <a href="home.html">Home</a>
+                <a href="menu.html" class="act">Menu</a>
+                <a href="about.html">About</a>
+            </nav>
+            <button type="button" id="logout-btn" class="loBtn" title="Log out">
+                <span>Log out</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-card">
+            <h2>AJ & The Four Flavor Menu</h2>
+            <div class="list">
+                <article class="rc" style="text-align: center;">
+                    <center>
+                    <img class="ri sm" src="images/basil.jfif" alt="Basil Pasta" style="display: block; margin: 0 auto;">
+                     </center>
+                    <div class="rh">
+                        
+                        <h3 align="center">Basil Pasta</h3>
+                    
+                    </div>
+                    <center>
+                    <p>Light and aromatic pasta tossed with fresh basil and garlic.</p>
+                    </center>
+                    <div class="ra" style="display: flex; justify-content: center; width: 100%;">
+                        <center>
+                        <button type="button" class="bt vr" data-target="recipe-basil">View Recipe</button>
+                        </center>
+                    </div>
+                    <section id="recipe-basil" hidden style="text-align: left;">
+                        <h4>Ingredients</h4>
+                        <ul>
+                            <li>250 g pasta</li>
+                            <li>2 cups basil leaves</li>
+                            <li>3 cloves garlic</li>
+                            <li>Olive oil</li>
+                            <li>Parmesan cheese</li>
+                        </ul>
+                        <h4>Step-by-step process</h4>
+                        <ol>
+                            <li>Cook pasta until al dente, then drain.</li>
+                            <li>Saute garlic in olive oil and add basil leaves.</li>
+                            <li>Toss pasta in the basil-garlic mixture.</li>
+                            <li>Top with parmesan and serve warm.</li>
+                        </ol>
+                    </section>
+                </article>
+                <article class="rc" style="text-align: center;">
+                    <img class="ri sm" src="images/berry.jfif" alt="Parfait Berry" style="display: block; margin: 0 auto;">
+                    <div class="rh">
+                        <h3 style="text-align: center;">Parfait Berry</h3>
+                    </div>
+                    <p>Fresh berry parfait layered with yogurt and crunchy granola.</p>
+                    <div class="ra" style="display: flex; justify-content: center; width: 100%;">
+                        <button type="button" class="bt vr" data-target="recipe-parfait">View Recipe</button>
+                    </div>
+                    <section id="recipe-parfait" hidden style="text-align: left;">
+                        <h4>Ingredients</h4>
+                        <ul>
+                            <li>Mixed berries</li>
+                            <li>Greek yogurt</li>
+                            <li>Granola</li>
+                            <li>Honey</li>
+                        </ul>
+                        <h4>Step-by-step process</h4>
+                        <ol>
+                            <li>Place yogurt in a glass or bowl.</li>
+                            <li>Add a layer of mixed berries.</li>
+                            <li>Add granola for crunch.</li>
+                            <li>Repeat layers and drizzle honey before serving.</li>
+                        </ol>
+                    </section>
+                </article>
+                <article class="rc" style="text-align: center;">
+                    <img class="ri sm" src="images/Garlic Butter Shrimp.jfif" alt="Garlic Butter Shrimp" style="display: block; margin: 0 auto;">
+                    <div class="rh">
+                        <h3 style="text-align: center;">Garlic Butter Shrimp</h3>
+                    </div>
+                    <p>Juicy shrimp cooked in rich garlic butter sauce.</p>
+                    <div class="ra" style="display: flex; justify-content: center; width: 100%;">
+                        <button type="button" class="bt vr" data-target="recipe-shrimp">View Recipe</button>
+                    </div>
+                    <section id="recipe-shrimp" hidden style="text-align: left;">
+                        <h4>Ingredients</h4>
+                        <ul>
+                            <li>500 g shrimp</li>
+                            <li>4 tbsp butter</li>
+                            <li>6 cloves garlic</li>
+                            <li>1 tbsp lemon juice</li>
+                            <li>Parsley</li>
+                        </ul>
+                        <h4>Step-by-step process</h4>
+                        <ol>
+                            <li>Saute garlic in melted butter.</li>
+                            <li>Add shrimp and cook until pink.</li>
+                            <li>Season with lemon juice, salt, and pepper.</li>
+                            <li>Garnish with parsley and serve hot.</li>
+                        </ol>
+                    </section>
+                </article>
+                <article class="rc" style="text-align: center;">
+                    <img class="ri sm" src="images/MangoGraham.jpg" alt="Mango Graham" style="display: block; margin: 0 auto;">
+                    <div class="rh" style="text-align: center;">
+                        <h3 style="text-align: center;">Mango Graham</h3>
+                    </div>
+                    <p>Creamy chilled dessert layered with mangoes and graham crackers.</p>
+                    <div class="ra" style="display: flex; justify-content: center; width: 100%;">
+                        <button type="button" class="bt vr" data-target="recipe-mango">View Recipe</button>
+                    </div>
+                    <section id="recipe-mango" hidden style="text-align: left;">
+                        <h4>Ingredients</h4>
+                        <ul style="text-align: left;">
+                            <li>Ripe mangoes</li>
+                            <li>Graham crackers</li>
+                            <li>All-purpose cream</li>
+                            <li>Condensed milk</li>
+                        </ul>
+                        <h4>Step-by-step process</h4>
+                        <ol>
+                            <li>Mix cream and condensed milk until smooth.</li>
+                            <li>Layer graham crackers, cream, and mango slices.</li>
+                            <li>Repeat layers until the dish is full.</li>
+                            <li>Chill for several hours before serving.</li>
+                        </ol>
+                    </section>
+                </article>
+              
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="c:\Users\au043\Downloads\IT5_WST_B3_Group3\IT5_WST_B3_Group3\Website Final - Copy - Final_Recipe_Jocel\images\Header.jpg">
+    <script src="js/script.js" defer></script>
+    <title>Login · AJ & The Four Flavors</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="ab">
+
+        <div class="abr">
+            <i class="fas fa-utensils" aria-hidden="true"></i>
+            <span>AJ & The Four Flavors</span>
+        </div>
+        <p class="atg">Sign in or create an account to open your recipe home.</p>
+    </header>
+
+    <main class="am">
+        <div class="ac">
+          
+            <div class="tabs" role="tablist">
+                <button type="button" class="tab active" data-tab="login" role="tab" aria-selected="true">Login</button>
+                <button type="button" class="tab" data-tab="signup" role="tab" aria-selected="false">Sign Up</button>
+            </div>
+
+         
+            <form id="login-form" class="af active" autocomplete="on">
+                <label for="login-username">Username</label>
+                <input id="login-username" name="username" type="text" required autocomplete="username" placeholder="Enter Your First Name">
+
+                <label for="login-password">Password</label>
+                <input id="login-password" name="password" type="password" required autocomplete="current-password" placeholder="Your password">
+
+                <button class="bt asb" type="submit">Log in</button>
+                <p id="login-message" class="msg" role="status"></p>
+            </form>
+
+            <form id="signup-form" class="af" autocomplete="on">
+                <label for="signup-name">Full name</label>
+                <input id="signup-name" type="text" required placeholder="Your name">
+
+                <label for="signup-email">Email</label>
+                <input id="signup-email" type="email" required placeholder="you@example.com">
+
+                <label for="signup-password">Password</label>
+                <input id="signup-password" type="password"  required placeholder="At least 6 characters">
+
+                <label for="signup-confirm-password">Confirm password</label>
+                <input id="signup-confirm-password" type="password"required placeholder="Repeat password">
+
+                <button class="bt asb" type="submit">Create account</button>
+                <p id="signup-message" class="msg" role="status"></p>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

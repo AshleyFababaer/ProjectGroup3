@@ -1,0 +1,634 @@
+/* Global Reset */
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Base Page */
+body {
+    margin: 0;
+    background: #FFF8F2;
+    color: #2E2E2E;
+}
+
+/* Navigation Bar */
+.hdr,
+.head {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 14px 4%;
+    border-bottom: 1px solid #E0E0E0;
+    background: #ffffff;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #2E2E2E;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.logo i {
+    color: #FF7A59;
+}
+
+/* Navigation Layout Wrappers */
+.hdrRt,
+.header1,
+.header-inner {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-inner {
+    width: 100%;
+    justify-content: flex-end;
+}
+
+/* Navigation Links */
+.nav {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #2E2E2E;
+    padding: 8px 16px;
+    border-radius: 999px;
+    min-height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav a.act,
+.nav a:hover {
+    background: #FF7A59;
+    color: #fff;
+}
+
+/* Mobile Menu Button */
+.menuTgl {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menuTgl {
+    display: none;
+    background: #F1F1F1;
+    color: #2E2E2E;
+}
+
+/* Main Content Wrapper */
+main {
+    width: min(1140px, 92%);
+    margin: 24px auto 34px;
+    display: grid;
+    gap: 18px;
+}
+
+/* Shared Card Styles */
+.section-card {
+    background: #ffffff;
+    border: 1px solid #E0E0E0;
+    border-radius: 16px;
+    box-shadow: 0 10px 24px rgba(46, 46, 46, 0.08);
+    padding: 20px;
+}
+
+/* Shared Text Utilities */
+.context-text {
+    color: #696969;
+}
+
+/* Home Page Hero */
+.hero {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 18px;
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid #E0E0E0;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 10px 24px rgba(46, 46, 46, 0.08);
+}
+
+/* Buttons */
+.bt {
+    background: #FF7A59;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 14px;
+    cursor: pointer;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.bt:hover {
+    filter: brightness(0.95);
+}
+
+/* About Page Context Grid */
+.context-grid {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* About Page Team Section */
+.about-team-section h2 {
+    margin-top: 0;
+}
+
+.about-team-intro {
+    margin-bottom: 4px;
+}
+
+/* About Page Team List */
+.about-team-row {
+    list-style: none;
+    margin: 18px 0 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: clamp(12px, 2.2vw, 22px);
+    max-width: 900px;
+    margin-inline: auto;
+    justify-items: center;
+    align-items: start;
+}
+
+.about-team-row > li {
+    margin: 0;
+    width: 100%;
+    max-width: 168px;
+    min-width: 0;
+}
+
+/* About Page Team Profile Links */
+.about-team-link {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid #E0E0E0;
+    box-shadow: 0 10px 24px rgba(46, 46, 46, 0.08);
+    text-decoration: none;
+    transition: transform 0.28s ease, box-shadow 0.28s ease;
+    background: #F1F1F1;
+}
+
+.about-team-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 36px rgba(46, 46, 46, 0.14);
+}
+
+.dark .about-team-link:hover {
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
+}
+
+.about-team-link:focus-visible {
+    outline: 3px solid #FF7A59;
+    outline-offset: 4px;
+}
+
+.about-team-link img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.38s ease;
+}
+
+.about-team-link:hover img,
+.about-team-link:focus-visible img {
+    transform: scale(1.08);
+}
+
+@media (max-width: 900px) {
+    .about-team-row {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        max-width: 520px;
+    }
+
+    .about-team-row > li {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 560px) {
+    .about-team-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 380px;
+    }
+}
+
+@media (max-width: 360px) {
+    .about-team-row {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .about-team-row > li {
+        max-width: none;
+    }
+}
+
+/* Form Elements (Auth and Shared Forms) */
+label {
+    display: block;
+    margin: 10px 0 6px;
+    font-weight: 600;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    background: #F1F1F1;
+    color: #2E2E2E;
+    padding: 10px;
+}
+
+/* Menu Page Recipe List */
+.list {
+    display: grid;
+    gap: 12px;
+}
+
+/* Menu Page Recipe Card */
+.rc {
+    border: 1px solid #E0E0E0;
+    border-radius: 12px;
+    padding: 12px;
+    background: #ffffff;
+}
+
+/* Menu Page Recipe Card Image */
+.ri.sm {
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #E0E0E0;
+}
+
+/* Menu Page Recipe Card Header */
+.rh {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Menu Page Recipe Actions */
+.ra {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+/* Auth Page Message Area */
+.msg {
+    min-height: 20px;
+}
+
+/* ----- Auth page (login / sign-up) — centered, card layout ----- */
+/* Auth Page Container */
+.ab {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(165deg, #FFE9E0, #FFF8F2);
+}
+
+/* Auth Page Header */
+.ah {
+    text-align: center;
+    padding: 28px 16px 8px;
+}
+
+/* Auth Page Brand Row */
+.abr {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: #2E2E2E;
+}
+
+.abr i {
+    color: #FF7A59;
+    font-size: 1.5rem;
+}
+
+/* Auth Page Tagline */
+.atg {
+    margin: 12px auto 0;
+    max-width: 420px;
+    color: #6D6D6D;
+    font-size: 0.98rem;
+    line-height: 1.45;
+}
+
+/* Auth Page Main Layout */
+.am {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 16px 40px;
+}
+
+/* Auth Page Card */
+.ac {
+    width: min(440px, 100%);
+    background: #ffffff;
+    border: 1px solid #E0E0E0;
+    border-radius: 20px;
+    box-shadow: 0 10px 24px rgba(46, 46, 46, 0.08);
+    padding: 26px 22px 28px;
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.ac:focus-within {
+    box-shadow: 0 14px 36px rgba(46, 46, 46, 0.12);
+}
+
+/* Auth Page Tabs */
+.tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.tab {
+    flex: 1;
+    border: 1px solid #E0E0E0;
+    border-radius: 12px;
+    padding: 11px 12px;
+    background: #F1F1F1;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #2E2E2E;
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.tab:hover {
+    filter: brightness(0.97);
+}
+
+.tab.active {
+    background: #FF7A59;
+    color: #fff;
+    border-color: #FF7A59;
+}
+
+/* Auth Page Forms */
+.af {
+    display: none;
+    animation: authFade 0.35s ease;
+}
+
+.af.active {
+    display: block;
+}
+
+@keyframes authFade {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.af label:first-of-type {
+    margin-top: 0;
+}
+
+/* Auth Page Submit Button */
+.asb {
+    width: 100%;
+    margin-top: 18px;
+    padding: 12px 16px;
+    font-size: 1rem;
+}
+
+/* Log Out Button */
+.loBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    min-height: 40px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    border: 1px solid #E0E0E0;
+    border-radius: 999px;
+    background: #F1F1F1;
+    color: #2E2E2E;
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.loBtn:hover {
+    background: #EEDDDD;
+    border-color: #d64545;
+    color: #8b1e1e;
+}
+
+.dark .loBtn:hover {
+    color: #ffb4b4;
+}
+
+/* Footer */
+.ftr {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    gap: 16px;
+    padding: 24px;
+    background: #ffffff;
+    border-top: 1px solid #E0E0E0;
+}
+
+/* Responsive Styles (Tablet) */
+@media (max-width: 980px) {
+    .nav {
+        display: none;
+    }
+
+    .nav.opn,
+    .nav.open {
+        display: grid;
+        position: absolute;
+        left: 4%;
+        right: 4%;
+        top: 64px;
+        background: #ffffff;
+        border: 1px solid #E0E0E0;
+        border-radius: 12px;
+        padding: 10px;
+    }
+
+    .menuTgl {
+        display: inline-flex;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .context-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Responsive Styles (Mobile) */
+@media (max-width: 640px) {
+    .hdrRt {
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .loBtn span {
+        display: none;
+    }
+
+    .context-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ri.sm {
+        width: 140px;
+        height: 95px;
+    }
+}
+
+
+/* Visual refresh: warm, clean, consistent styling */
+/* Theme Color Overrides */
+body {
+    background-color: #dff1ff;
+    color: #2f2a26;
+}
+
+/* Header Theme Overrides */
+.hdr {
+    background-color: #fffaf6;
+    border-bottom: 1px solid #ead9ca;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+/* Navigation Theme Overrides */
+.nav a {
+    color: #3a312b;
+    font-weight: 600;
+    text-align: center;
+}
+
+.nav a.act,
+.nav a:hover {
+    background-color: #f28d5f;
+    color: #ffffff;
+}
+
+/* Main Spacing Overrides */
+main,
+.page-main {
+    gap: 20px;
+}
+
+/* Card Theme Overrides */
+.section-card,
+.content-block,
+.card,
+.rc {
+    background-color: #fffaf6;
+    border: 1px solid #ead9ca;
+    border-radius: 14px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+}
+
+
+.hero {
+    background-color: #fffaf6;
+    border: 1px solid #ead9ca;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+}
+
+/* Home Page Heading */
+#home-heading {
+    color: #e46f3a;
+    letter-spacing: 0.06em;
+}
+
+/* Home Page Welcome Block */
+.wel {
+    background-color: #fff3e7;
+    border: 1px solid #f1c8a8;
+}
+
+/* Button Theme Overrides */
+.bt,
+.loBtn {
+    background-color: #f28d5f;
+    color: #fff;
+    border: 1px solid #e17f52;
+    border-radius: 999px;
+    font-weight: 700;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Menu Page Heading Alignment */
+.rh h3 {
+    width: 100%;
+    text-align: center;
+}
+
+.bt:hover,
+.loBtn:hover {
+    background-color: #e17f52;
+    color: #fff;
+}
+
+/* Footer Theme Overrides */
+.ftr {
+    background-color: #fffaf6;
+    border-top: 1px solid #ead9ca;
+}
