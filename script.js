@@ -78,7 +78,7 @@
         try {
             if (isLoggedIn()) return;
             var file = currentHtmlFile();
-            if (/^auth\.html$/i.test(file)) return;
+            if (/^index\.html$/i.test(file)) return;
             window.location.replace(new URL("index.html", window.location.href).href);
         } catch (_e) {
             // Fail open
