@@ -79,7 +79,7 @@
             if (isLoggedIn()) return;
             var file = currentHtmlFile();
             if (/^auth\.html$/i.test(file)) return;
-            window.location.replace(new URL("auth.html", window.location.href).href);
+            window.location.replace(new URL("index.html", window.location.href).href);
         } catch (_e) {
             // Fail open
         }
@@ -118,7 +118,7 @@
             logoutButton.addEventListener("click", function () {
                 localStorage.removeItem(CURRENT_USER_KEY);
                 localStorage.removeItem(AUTH_TOKEN_KEY);
-                window.location.href = new URL("auth.html", window.location.href).href;
+                window.location.href = new URL("index.html", window.location.href).href;
             });
         }
 
